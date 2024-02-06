@@ -22,8 +22,12 @@ if __name__ == "__main__":
     # Limpiar el ENV
     Env.clear()
     
+    # Name Solution
+    nameApp = Env.get('SOLUTION_NAME')
+    
     # Start message
     Console.info(f"ETLXpress Initialized - Version: {App.version}")
+    Console.success(f"Solution: {nameApp}")
         
     # Inserting Log.
     Logger().info("ETLXpress Execution.")
