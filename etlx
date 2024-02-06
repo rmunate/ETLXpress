@@ -1,0 +1,31 @@
+from core.Clarity.Console import Console
+from core.Cli.Maker import Maker
+import argparse
+import sys
+import os
+
+#-----------------------------------------------------#
+# ETLXpress.                                          #
+# Lightweight framework for managing CronJobs.        #
+# Handles ETL, Reporting, and Messaging.              #
+# CCL Colombian Logistics Corporation.                #
+# Author: Raul Mauricio Uñate                         #
+#-----------------------------------------------------#
+
+if __name__ == "__main__":
+    
+    # Start message
+    Console.info(f"ETLXpress CLI Initialized")
+    
+    # CLI Argument Parser
+    parser = argparse.ArgumentParser(description="ETLXpress Main Script")
+    parser.add_argument("--make", help="Type of file to create.", required=True)
+    parser.add_argument("--name", help="Name of the file and Class.", required=True)
+    args = parser.parse_args()
+    
+    # Update SysPath
+    project_directory = os.path.dirname(os.path.abspath(__file__))
+    sys.path.insert(0, project_directory)
+    
+    # Create File
+    Maker(args.make, args.name).execute()
