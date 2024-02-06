@@ -7,6 +7,8 @@ import argparse
 import sys
 import os
 
+os.environ['PYTHONBUFFERED'] = '1'
+
 #-----------------------------------------------------#
 # ETLXpress.                                          #
 # Lightweight framework for managing CronJobs.        #
