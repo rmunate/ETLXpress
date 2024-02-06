@@ -1,5 +1,15 @@
-from core.Clarity.Console import Console
+import unittest
 
-value = 'example'
+#-----------------------------------------------------#
+# ETLXpress Test.                                     #
+# Lightweight framework for managing CronJobs.        #
+# Handles ETL, Reporting, and Messaging.              #
+# CCL Colombian Logistics Corporation.                #
+# Author: Raul Mauricio Uñate                         #
+#-----------------------------------------------------#
+class TestETLXpress(unittest.TestCase):
+    def test_addition(self):
+        self.assertEqual(8, 8)
 
-Console.dump(value)
+if __name__ == '__main__':
+    unittest.main()
