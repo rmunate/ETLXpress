@@ -8,7 +8,7 @@ import unittest
 # Author: Raul Mauricio Uñate                         #
 #-----------------------------------------------------#
 class TestETLXpress(unittest.TestCase):
-    def test_addition(self):
+    def example(self):
         self.assertEqual(8, 8)
 
 if __name__ == '__main__':
