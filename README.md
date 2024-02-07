@@ -1,5 +1,7 @@
 # Framework ETLXpress
 
+![LogoSmall](https://github.com/rmunate/tsc-printer/assets/91748598/a554d684-2578-4984-9523-663ac909a747)
+
 Este es un framework de ETL diseñado para facilitar el proceso de manipulación y carga de datos desde diversas fuentes hacia un destino específico. El framework proporciona una estructura modular y flexible que permite realizar fácilmente tareas de extracción, transformación y carga de datos, así como también la implementación de flujos de trabajo complejos.
 
 ## Características principales
