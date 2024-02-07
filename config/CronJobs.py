@@ -14,8 +14,8 @@ if project_directory not in sys.path:
 
 cronjobs = [
     {
-        'name': 'Report_Mondelez_M3',
+        'name': 'NameJob',
         'schedule': '0 0 * * *',
-        'command': 'python -B app/Console/Commands/ReportMdzM3.py',
+        'command': 'python -B app/Console/Commands/FileJob.py',
     },
 ]
