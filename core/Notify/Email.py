@@ -77,7 +77,7 @@ class Email:
                 template_content = f.read()
                 
                 for search, replace in replaces.items():
-                    template_content = template_content.replace(search, replace)
+                    template_content = template_content.replace(str(search), str(replace))
                     
             self.html = template_content
         else:
